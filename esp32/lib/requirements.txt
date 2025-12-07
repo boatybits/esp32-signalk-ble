@@ -1,0 +1,37 @@
+# MicroPython Library Requirements
+
+## Core Dependencies
+These libraries are built into MicroPython firmware:
+- `bluetooth` - BLE functionality
+- `machine` - Hardware access (Pin, I2C, etc.)
+- `struct` - Binary data packing
+- `time` - Time functions
+- `gc` - Garbage collection
+
+## Optional Sensor Libraries
+Install these if using real sensors:
+
+### BME280 (Temperature, Humidity, Pressure)
+```python
+# Via mip (MicroPython package manager):
+import mip
+mip.install("bme280")
+```
+
+### DS18B20 (Temperature)
+```python
+# Via mip:
+import mip
+mip.install("onewire")
+mip.install("ds18x20")
+```
+
+## Installation Notes
+1. These libraries should be uploaded to the ESP32's `/lib` directory
+2. Use Thonny IDE or `ampy` to upload files
+3. Ensure MicroPython firmware is v1.20 or later for best BLE support
+
+## Manual Installation (if needed)
+If mip is not available, download libraries from:
+- https://github.com/micropython/micropython-lib
+- Place .py files in the `lib/` directory on ESP32
