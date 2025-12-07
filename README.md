@@ -2,6 +2,9 @@
 
 Send sensor data from ESP32 to SignalK server via Bluetooth Low Energy.
 
+![Grafana Dashboard Example](grafana_example.png)
+*Real-time temperature data from ESP32 displayed in Grafana via SignalK*
+
 ## 🚀 Quick Start
 
 ### Prerequisites
